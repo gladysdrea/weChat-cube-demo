@@ -1,0 +1,66 @@
+.cube{
+    width: 200rpx;
+    height: 200rpx;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center center 100rpx;
+    animation: cube 10s linear infinite;
+}
+.cube>view{
+    width: 200rpx;
+    height: 200rpx;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    line-height: 200rpx;
+}
+/*前*/
+.front{
+    background: aqua;
+    z-index: 2;
+    transform: translateZ(200rpx);
+    background-size: 100% 100%;
+}
+/*后*/
+.back{
+    background: #d3ecc5;
+    z-index: 1;
+    transform: rotateY(180deg);
+    background-size: 100% 100%;
+}
+/*左*/
+.left{
+    background: #94b0e0;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+    background-size: 100% 100%;
+}
+/*右*/
+.right{
+    background: #b282e8;
+    transform: rotateY(90deg);
+    transform-origin: right;
+    background-size: 100% 100%;
+}
+/*上*/
+.top{
+    background: #d991cd;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    background-size: 100% 100%;
+}
+/*下*/
+.bottom{
+    background: #d99b89;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    background-size: 100% 100%;
+}
+@keyframes cube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}

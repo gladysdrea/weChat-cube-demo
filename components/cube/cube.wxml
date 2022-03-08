@@ -1,0 +1,8 @@
+<view class="cube">
+    <view class="front">前</view>
+    <view class="right">右</view>
+    <view class="back">后</view>
+    <view class="left">左</view>
+    <view class="top">上</view>
+    <view class="bottom">下</view>
+</view>

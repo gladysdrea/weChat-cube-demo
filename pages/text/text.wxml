@@ -1,0 +1,15 @@
+<!--pages/text/text.wxml-->
+<view>
+    <swiper class="tab-right" vertical="true" display-multiple-items='5' autoplay="{{true}}" duration="200">
+        <view class="right-item">
+            <block wx:for-index="idx" wx:for='{{textList}}' wx:key="idx">
+                <swiper-item>
+                    <view class='content-item'>
+                        <text class='name'>{{item}}</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </view>
+    </swiper>
+</view>
+
